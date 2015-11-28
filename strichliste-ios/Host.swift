@@ -8,13 +8,14 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class HostController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(red:(46/255), green:(142/255), blue:(206/255), alpha: 1.0)
+        self.navigationController?.navigationBar.barStyle = .Black
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		466F66F61BF7BD6300C5C4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F66F51BF7BD6300C5C4AA /* AppDelegate.swift */; };
-		466F66F81BF7BD6300C5C4AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F66F71BF7BD6300C5C4AA /* FirstViewController.swift */; };
-		466F66FA1BF7BD6300C5C4AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F66F91BF7BD6300C5C4AA /* SecondViewController.swift */; };
+		466F66F81BF7BD6300C5C4AA /* Host.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F66F71BF7BD6300C5C4AA /* Host.swift */; };
 		466F66FD1BF7BD6300C5C4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466F66FB1BF7BD6300C5C4AA /* Main.storyboard */; };
 		466F66FF1BF7BD6300C5C4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 466F66FE1BF7BD6300C5C4AA /* Assets.xcassets */; };
 		466F67021BF7BD6300C5C4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 466F67001BF7BD6300C5C4AA /* LaunchScreen.storyboard */; };
@@ -35,10 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06C8C6D0F80ED74E9247E9B9 /* Pods_strichliste_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_strichliste_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466F66F21BF7BD6300C5C4AA /* strichliste-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "strichliste-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		466F66F51BF7BD6300C5C4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		466F66F71BF7BD6300C5C4AA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		466F66F91BF7BD6300C5C4AA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		466F66F71BF7BD6300C5C4AA /* Host.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Host.swift; sourceTree = "<group>"; };
 		466F66FC1BF7BD6300C5C4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		466F66FE1BF7BD6300C5C4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		466F67011BF7BD6300C5C4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 				466F670B1BF7BD6300C5C4AA /* strichliste-iosTests */,
 				466F67161BF7BD6300C5C4AA /* strichliste-iosUITests */,
 				466F66F31BF7BD6300C5C4AA /* Products */,
+				EA3ECE875868C92A6B451D99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +99,8 @@
 		466F66F41BF7BD6300C5C4AA /* strichliste-ios */ = {
 			isa = PBXGroup;
 			children = (
+				46A916511C0A674100377DDA /* Controller */,
 				466F66F51BF7BD6300C5C4AA /* AppDelegate.swift */,
-				466F66F71BF7BD6300C5C4AA /* FirstViewController.swift */,
-				466F66F91BF7BD6300C5C4AA /* SecondViewController.swift */,
 				466F66FB1BF7BD6300C5C4AA /* Main.storyboard */,
 				466F66FE1BF7BD6300C5C4AA /* Assets.xcassets */,
 				466F67001BF7BD6300C5C4AA /* LaunchScreen.storyboard */,
@@ -126,6 +125,22 @@
 				466F67191BF7BD6300C5C4AA /* Info.plist */,
 			);
 			path = "strichliste-iosUITests";
+			sourceTree = "<group>";
+		};
+		46A916511C0A674100377DDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				466F66F71BF7BD6300C5C4AA /* Host.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EA3ECE875868C92A6B451D99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C8C6D0F80ED74E9247E9B9 /* Pods_strichliste_ios.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +211,7 @@
 				TargetAttributes = {
 					466F66F11BF7BD6300C5C4AA = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E622J4TJFL;
 					};
 					466F67071BF7BD6300C5C4AA = {
 						CreatedOnToolsVersion = 7.2;
@@ -259,9 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466F66FA1BF7BD6300C5C4AA /* SecondViewController.swift in Sources */,
 				466F66F61BF7BD6300C5C4AA /* AppDelegate.swift in Sources */,
-				466F66F81BF7BD6300C5C4AA /* FirstViewController.swift in Sources */,
+				466F66F81BF7BD6300C5C4AA /* Host.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "strichliste-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.strichliste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos9.2;
 			};
 			name = Debug;
 		};
@@ -414,10 +433,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "strichliste-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.fnordcordia.strichliste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos9.2;
 			};
 			name = Release;
 		};
@@ -488,6 +511,7 @@
 				466F671E1BF7BD6300C5C4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		466F671F1BF7BD6300C5C4AA /* Build configuration list for PBXNativeTarget "strichliste-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +520,7 @@
 				466F67211BF7BD6300C5C4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		466F67221BF7BD6300C5C4AA /* Build configuration list for PBXNativeTarget "strichliste-iosUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +529,7 @@
 				466F67241BF7BD6300C5C4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
